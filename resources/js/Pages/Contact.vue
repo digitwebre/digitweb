@@ -14,7 +14,7 @@
       <form method="post" class="space-y-5" @submit.prevent="submit" novalidate>
         <div class="flex flex-col">
           <label for="nom">Nom</label>
-          <input type="text" v-model="form.nom" aria-autocomplete="family-name" placeholder="Ecrivez votre nom de famille" class="border border-slate-300 rounded"/>
+          <input type="text" id="nom" v-model="form.nom" aria-autocomplete="family-name" placeholder="Ecrivez votre nom de famille" class="border border-slate-300 rounded"/>
           <InputError :message="form.errors.nom" />
         </div>
         <div class="flex flex-col">
